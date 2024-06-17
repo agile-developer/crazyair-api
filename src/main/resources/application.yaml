@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: crazyair-api
+  datasource:
+    url: jdbc:postgresql://localhost:5433/crazyair-db
+    username: crazyair-user
+    password: this1isNotGood!
+
+server:
+  port: 8081

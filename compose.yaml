@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    restart: always
+    environment:
+      POSTGRES_DB: crazyair-db
+      POSTGRES_PASSWORD: this1isNotGood!
+      POSTGRES_USER: crazyair-user
+    ports:
+      - '5433:5432'
