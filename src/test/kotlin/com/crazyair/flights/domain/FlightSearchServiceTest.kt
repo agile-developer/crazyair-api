@@ -27,8 +27,8 @@ class FlightSearchServiceTest {
         val returnDate = LocalDate.of(2024, 9, 10)
         val passengerCount = 4
         val searchRequest = FlightSearchRequest(origin, destination, departureDate, returnDate, passengerCount)
-        val flight1 = Flight(1, "Emirates", 50000, CabinClass.E, origin, destination, departureDate.atStartOfDay(), returnDate.atStartOfDay(), 10)
-        val flight2 = Flight(2, "British Airways", 60000, CabinClass.B, origin, destination, departureDate.atStartOfDay(), returnDate.atStartOfDay(), 20)
+        val flight1 = Flight(1, "Emirates", 50000, CabinClass.E, Airport.valueOf(origin), Airport.valueOf(destination), departureDate.atStartOfDay(), returnDate.atStartOfDay(), 10)
+        val flight2 = Flight(2, "British Airways", 60000, CabinClass.B, Airport.valueOf(origin), Airport.valueOf(destination), departureDate.atStartOfDay(), returnDate.atStartOfDay(), 20)
         every { flightRepository.findFlights(origin, destination, passengerCount) } returns listOf(flight1, flight2)
 
         // act

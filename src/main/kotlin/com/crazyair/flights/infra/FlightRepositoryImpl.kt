@@ -1,5 +1,6 @@
 package com.crazyair.flights.infra
 
+import com.crazyair.flights.domain.Airport
 import com.crazyair.flights.domain.CabinClass
 import com.crazyair.flights.domain.Flight
 import org.slf4j.Logger
@@ -31,8 +32,8 @@ class FlightRepositoryImpl(
                     rs.getString("airline"),
                     rs.getLong("price_in_pence"),
                     CabinClass.valueOf(rs.getString("cabin_class")),
-                    rs.getString("departure_airport_code"),
-                    rs.getString("destination_airport_code"),
+                    Airport.valueOf(rs.getString("departure_airport_code")),
+                    Airport.valueOf(rs.getString("destination_airport_code")),
                     rs.getTimestamp("departure_date").toLocalDateTime(),
                     rs.getTimestamp("arrival_date").toLocalDateTime(),
                     rs.getInt("seats_available")

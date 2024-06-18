@@ -7,8 +7,8 @@ data class Flight(
     val airline: String,
     val priceInPence: Long,
     val cabinClass: CabinClass,
-    val departureAirportCode: String,
-    val destinationAirportCode: String,
+    val departureAirportCode: Airport,
+    val destinationAirportCode: Airport,
     val departureDate: LocalDateTime,
     val arrivalDate: LocalDateTime,
     val seatsAvailable: Int

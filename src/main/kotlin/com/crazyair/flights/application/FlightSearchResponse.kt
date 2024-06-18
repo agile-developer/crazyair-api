@@ -1,5 +1,6 @@
 package com.crazyair.flights.application
 
+import com.crazyair.flights.domain.Airport
 import com.crazyair.flights.domain.CabinClass
 import com.crazyair.flights.domain.Flight
 import java.math.BigDecimal
@@ -9,8 +10,8 @@ data class FlightSearchResponse(
     val airline: String,
     val price: BigDecimal,
     val cabinClass: CabinClass,
-    val departureAirportCode: String,
-    val destinationAirportCode: String,
+    val departureAirportCode: Airport,
+    val destinationAirportCode: Airport,
     val departureDate: LocalDateTime,
     val arrivalDate: LocalDateTime
 ) {
