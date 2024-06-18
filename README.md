@@ -41,7 +41,7 @@ This should return a response like this:
     "price": 550.00,
     "cabinClass": "E",
     "departureAirportCode": "LHR",
-    "destinationAirportCode": "LHR",
+    "destinationAirportCode": "DXB",
     "departureDate": "2024-07-01T08:00:00",
     "arrivalDate": "2024-07-10T08:00:00"
   },
@@ -50,7 +50,7 @@ This should return a response like this:
     "price": 650.00,
     "cabinClass": "B",
     "departureAirportCode": "LHR",
-    "destinationAirportCode": "LHR",
+    "destinationAirportCode": "DXB",
     "departureDate": "2024-07-01T08:00:00",
     "arrivalDate": "2024-07-10T08:00:00"
   },
@@ -59,7 +59,7 @@ This should return a response like this:
     "price": 450.00,
     "cabinClass": "E",
     "departureAirportCode": "LHR",
-    "destinationAirportCode": "LHR",
+    "destinationAirportCode": "DXB",
     "departureDate": "2024-07-01T08:00:00",
     "arrivalDate": "2024-07-10T08:00:00"
   },
@@ -68,7 +68,7 @@ This should return a response like this:
     "price": 750.00,
     "cabinClass": "B",
     "departureAirportCode": "LHR",
-    "destinationAirportCode": "LHR",
+    "destinationAirportCode": "DXB",
     "departureDate": "2024-07-01T08:00:00",
     "arrivalDate": "2024-07-10T08:00:00"
   }
