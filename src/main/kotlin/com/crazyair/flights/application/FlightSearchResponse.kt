@@ -22,7 +22,7 @@ data class FlightSearchResponse(
                     BigDecimal.valueOf(priceInPence).movePointLeft(2),
                     cabinClass,
                     departureAirportCode,
-                    departureAirportCode,
+                    destinationAirportCode,
                     departureDate,
                     arrivalDate
                 )
